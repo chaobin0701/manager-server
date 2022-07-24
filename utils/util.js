@@ -25,7 +25,7 @@ module.exports = {
             skipIndex
          }
     },
-    success(data='',msg=''.at.code=CODE.SUCCESS){
+    success(data='',msg='',code=CODE.SUCCESS){
         log4j.debug(data)
         return {
             code,data,msg
@@ -36,5 +36,5 @@ module.exports = {
         return {
             code,data,msg
         }
-    }
+    },CODE
 }
